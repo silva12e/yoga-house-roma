@@ -1,0 +1,16 @@
+<div class="modal animated fadeIn" [ngClass]="{'is-active': isActive}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title modal-title">Site under construction</p>
+        <button class="delete" aria-label="close" (click)="closeModal()"></button>
+      </header>
+      <section class="modal-card-body">
+        Our site is currently under construction. However, You are still able to view our class calendar & rates,
+        Book a class through our mind booking calendar and access our contact information.
+      </section>
+      <footer class="modal-card-foot">
+          <button (click)="closeModal()" class="button is-primary is-inverted is-outlined modal-action-button">Okay</button>
+      </footer>
+    </div>
+</div>

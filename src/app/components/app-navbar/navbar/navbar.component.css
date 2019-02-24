@@ -1,0 +1,18 @@
+.app-navbar {
+    background-color: transparent;
+    
+}
+.navbar-item {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+.navbar-item:hover {
+    color: #a96d4b;
+}
+
+:host {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+.landing-herro-main {
+    background: url('https://res.cloudinary.com/eesportfolio/image/upload/v1547926636/48396281_356141178301813_5276518901121810432_n_1.jpg');
+    width:  100%; /*or 70%, or what you want*/
+    height: 100%; /*or 70%, or what you want*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    width: 30vw;
+}
+.down-arrow-icon	{
+    font-size: 6vw;
+    color: #FFF;
+    -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+.down-arrow-icon:hover {
+    color: #d65050;
+}
+
+
+.action-wrapper {
+    text-align: center;
+    display: table;
+    margin-top: 60px;
+}
+
+.divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+.action-button:hover {
+    border-color: #d65050 !important;
+    color: #FFF !important;
+    background-color: #d65050!important; 
+}

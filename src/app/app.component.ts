@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  isActive: boolean;
+  private isNewToSite = "isNewToSite";
+
+  constructor() { }
+
+  ngOnInit(): void {
+    if (!localStorage.getItem(this.isNewToSite)) {
+      localStorage.setItem(this.isNewToSite, 'Value');
+
+      setTimeout(() => {
+        this.isActive = true;
+      }, 1000);
+    }
+  }
 }

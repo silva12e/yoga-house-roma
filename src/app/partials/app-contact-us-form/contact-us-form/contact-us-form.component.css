@@ -1,0 +1,21 @@
+.contact-form-body {
+    margin-top: 40px;
+}
+
+.primary-title-color {
+    color: #a96d4b;
+}
+
+.form-button {
+    border-color: #d65050 !important;
+    background-color: #FFF !important;
+    color: #d65050!important; 
+    -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+.form-button:hover {
+    border-color: #d65050 !important;
+    background-color: #d65050 !important;
+    color: #fff!important; 
+}

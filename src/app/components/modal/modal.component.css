@@ -1,0 +1,19 @@
+.modal-card-title {
+    color: #FFF !important;
+}
+
+.modal-card-head {
+    background-color: #a96d4b;
+}
+
+.modal-action-button {
+    border-color: #a96d4b !important;
+    background-color: #FFF !important;
+    color: #a96d4b!important; 
+}
+
+.modal-action-button:hover {
+    border-color: #a96d4b !important;
+    background-color: #a96d4b !important;
+    color: #fff!important; 
+}
