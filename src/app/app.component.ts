@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,12 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   isActive: boolean;
+  isPricesModalActive: boolean;
   private isNewToSite = "isNewToSite";
 
-  constructor() { }
+  constructor(
+    db: AngularFirestore
+  ) {}
 
   ngOnInit(): void {
     if (!localStorage.getItem(this.isNewToSite)) {

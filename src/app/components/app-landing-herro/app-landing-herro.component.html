@@ -1,12 +1,17 @@
+<app-prices-modal [isActive]="isPricesModalActive" (onClose)="togglePricesModal()"></app-prices-modal>
 <section class="hero is-fullheight landing-herro-main">
   <div class="hero-title">
     <div class="container">
       <img class="logo-img" src="https://res.cloudinary.com/eesportfolio/image/upload/v1547928677/TYHR_Full-Wordmark_White.png">
     </div>
     <div class="container action-wrapper" style="display: in-line">
-      <a class="button is-primary is-inverted is-outlined action-button">Calendar & Rates</a>
+      <a class="button is-primary is-inverted is-outlined action-button" (click)="togglePricesModal()">
+        Calendar & Rates
+      </a>
       <div class="divider"></div>
-      <a class="button is-primary is-inverted is-outlined action-button">Book a class</a>
+      <a (click)="goToMindBodyCalendar()" class="button is-primary is-inverted is-outlined action-button">
+        Book a class
+      </a>
     </div>
   </div>
   <div class="hero-footer">
