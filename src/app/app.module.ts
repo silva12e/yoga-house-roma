@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 // Firebase imports
 import { AngularFireModule } from '@angular/fire';
@@ -26,6 +27,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { PricesModalComponent } from './components/modal/prices/prices.modal.component';
 import { CalendarComponent } from './components/app-calendar/app-calendar.component';
 import { MainComponent } from './components/app-main/app-main.component';
+import { FooterComponent } from './components/app-footer/app-footer.component';
 
 // App services
 import { MessagesService } from './service/messages.service'
@@ -50,12 +52,14 @@ const appRoutes: Routes = [
     ModalComponent,
     PricesModalComponent,
     CalendarComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes
@@ -67,7 +71,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     MessagesService,
-    ModalService
+    ModalService,
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

@@ -19,7 +19,6 @@ export class AppLandingHerroComponent implements OnInit {
 
   goToMindBodyCalendar(): void {
     // Hack to get navigation to work without failures
-    // window.location.href = "http://localhost:4200/mind-body-calendar"; 
     window.open('http://localhost:4200/mind-body-calendar');
   }
 }

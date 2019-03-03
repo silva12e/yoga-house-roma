@@ -10,4 +10,8 @@ export class CalendarComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  downloadClassSchedule(): void {
+    window.open('https://res.cloudinary.com/eesportfolio/image/upload/v1551646370/Schedule_PDF_updated_25_feb.pdf');
+  }
 }
