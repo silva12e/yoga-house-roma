@@ -64,10 +64,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
-    AngularFireModule.initializeApp(environment.fireConfig),
-    AngularFireAuthModule,
-    AngularFireStorageModule,
-    AngularFirestoreModule
+    // AngularFireModule.initializeApp(environment.fireConfig),
+    // AngularFireAuthModule,
+    // AngularFireStorageModule,
+    // AngularFirestoreModule
   ],
   providers: [
     MessagesService,
