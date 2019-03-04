@@ -4,11 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -24,8 +25,11 @@
     "@angular/router": "^5.2.0",
     "@types/googlemaps": "^3.30.16",
     "core-js": "^2.4.1",
+    "express": "^4.16.4",
     "firebase": "^5.0.3",
     "firebase-tools": "^6.4.0",
+    "heroku": "^7.22.2",
+    "path": "^0.12.7",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.4.0",
     "zone.js": "^0.8.19"
@@ -38,6 +42,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
