@@ -48,7 +48,6 @@
   justify-content: center;
 }
 
-
 /* Responsive media queries */
 
 /* Samsung galaxy 5 */
@@ -59,6 +58,10 @@
   
     .down-arrow-icon {
       font-size: 12vw;
+    }
+
+    .title {
+      margin-left: 20px;
     }
   }
   
@@ -74,6 +77,10 @@
     
       .down-arrow-icon {
         font-size: 12vw;
+      }
+
+      .title {
+        margin-left: 20px;
       }
   }
   
@@ -91,6 +98,10 @@
       .down-arrow-icon {
         font-size: 12vw;
       }
+
+      .title {
+        margin-left: 20px;
+      }
   }
   
   /* ----------- iPhone X ----------- */
@@ -106,6 +117,10 @@
     
       .down-arrow-icon {
         font-size: 12vw;
+      }
+
+      .title {
+        margin-left: 20px;
       }
   }
   
@@ -124,6 +139,10 @@
       .down-arrow-icon {
         font-size: 12vw;
       }
+
+      .title {
+        margin-left: 20px;
+      }
   }
   
   
@@ -140,6 +159,10 @@
     
       .down-arrow-icon {
         font-size: 12vw;
+      }
+
+      .title {
+        margin-left: 20px;
       }
   }
   
@@ -158,6 +181,10 @@
       .down-arrow-icon {
         font-size: 12vw;
       }
+
+      .title {
+        margin-left: 20px;
+      }
   }
   
   /* ----------- iPad Pro 12.9" ----------- */
@@ -170,8 +197,14 @@
       .logo-img {
         width: 45vh
       }
+
+      .title {
+        margin-left: 20px;
+      }
     
       .down-arrow-icon {
         font-size: 12vw;
       }
+
+      
   }

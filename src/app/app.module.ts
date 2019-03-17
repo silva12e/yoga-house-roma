@@ -7,19 +7,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-// Firebase imports
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-
 // App components
 import { AppComponent } from './app.component';
 import { AppLandingHerroComponent } from './components/app-landing-herro/app-landing-herro.component';
 import { AppContactInformationComponent } from './components/app-contact-information/app-contact-information.component';
 import { AppInformationListComponent } from './components/app-information-list/app-information-list.component';
-import { AppInformationListItemComponent } from './components/app-information-list/app-information-list-item/app-information-list-item.component';
+import {
+   AppInformationListItemComponent 
+  } from './components/app-information-list/app-information-list-item/app-information-list-item.component';
 import { NavbarComponent } from './components/app-navbar/navbar/navbar.component';
 import { ContactUsFormComponent } from './partials/app-contact-us-form/contact-us-form/contact-us-form.component';
 import { ContactInformationComponent } from './partials/app-contact-information/contact-information/contact-information.component';
@@ -32,6 +27,7 @@ import { FooterComponent } from './components/app-footer/app-footer.component';
 // App services
 import { MessagesService } from './service/messages.service'
 import { ModalService } from './service/modal/modal.service';
+import { TermsOfServicesComponent } from './components/terms-of-services/terms-of-services.component';
 
 // Add to its own file
 const appRoutes: Routes = [
@@ -53,7 +49,8 @@ const appRoutes: Routes = [
     PricesModalComponent,
     CalendarComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    TermsOfServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -63,11 +60,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes
-    ),
-    // AngularFireModule.initializeApp(environment.fireConfig),
-    // AngularFireAuthModule,
-    // AngularFireStorageModule,
-    // AngularFirestoreModule
+    )
   ],
   providers: [
     MessagesService,

@@ -14,8 +14,10 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
+    "@angular/cli": "~1.7.3",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/core": "^5.2.0",
     "@angular/fire": "^5.0.2",
     "@angular/forms": "^5.2.0",
@@ -27,15 +29,13 @@
     "core-js": "^2.4.1",
     "express": "^4.16.4",
     "firebase": "^5.0.3",
-    "firebase-tools": "^6.4.0",
+    "firebase-tools": "^6.5.0",
     "heroku": "^7.22.2",
     "path": "^0.12.7",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.4.0",
-    "zone.js": "^0.8.19",
-    "@angular/cli": "~1.7.3",
-    "@angular/compiler-cli": "^5.2.0",
-    "typescript": "~2.5.3"
+    "typescript": "~2.5.3",
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",

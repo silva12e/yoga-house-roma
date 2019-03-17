@@ -1,0 +1,23 @@
+.tos-hero-body {
+  align-items: baseline !important;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.tos-herro {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.tos-title {
+  margin-top: 20px;
+  color: #a96d4b;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.tos-sub-title {
+  margin-top: 20px;
+  color: #a96d4b;
+  font-family: 'Cormorant Garamond', serif;
+}
+  
