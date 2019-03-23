@@ -6,7 +6,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./app-landing-herro.component.css']
 })
 export class AppLandingHerroComponent implements OnInit {
-  isPricesModalActive: boolean = false;
+  isPricesModalActive = false;
 
   constructor() { }
 
@@ -20,6 +20,5 @@ export class AppLandingHerroComponent implements OnInit {
   goToMindBodyCalendar(): void {
     // Hack to get navigation to work without failures
     window.open('https://yoga-house-roma-test.herokuapp.com/mind-body-calendar');
-    // window.open('http://localhost:4200/mind-body-calendar');
   }
 }
