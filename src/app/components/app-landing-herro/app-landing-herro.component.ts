@@ -5,16 +5,18 @@ import { Component, OnInit} from '@angular/core';
   templateUrl: './app-landing-herro.component.html',
   styleUrls: ['./app-landing-herro.component.css']
 })
-export class AppLandingHerroComponent implements OnInit {
+export class AppLandingHerroComponent {
   isPricesModalActive = false;
+  isCalendarModalActive = false;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
   togglePricesModal() {
     this.isPricesModalActive = !this.isPricesModalActive;
+  }
+
+  toggleCalendarModal() {
+    this.isCalendarModalActive = !this.isCalendarModalActive;
   }
 
   goToMindBodyCalendar(): void {

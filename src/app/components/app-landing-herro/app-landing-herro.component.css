@@ -25,23 +25,21 @@
     color: #d65050;
 }
 
-
 .action-wrapper {
-    text-align: center;
-    display: table;
-    margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
-.divider{
-    width:20px;
-    height:auto;
-    display:inline-block;
+.action-button {
+  margin: 10px;
 }
 
 .action-button:hover {
-    border-color: #d65050 !important;
-    color: #FFF !important;
-    background-color: #d65050!important; 
+  border-color: #d65050 !important;
+  color: #FFF !important;
+  background-color: #d65050!important;
 }
 
 /* Responsive media queries */

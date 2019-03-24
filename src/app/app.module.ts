@@ -23,6 +23,7 @@ import { PricesModalComponent } from './components/modal/prices/prices.modal.com
 import { CalendarComponent } from './components/app-calendar/app-calendar.component';
 import { MainComponent } from './components/app-main/app-main.component';
 import { FooterComponent } from './components/app-footer/app-footer.component';
+import { CalendarModalComponent } from './components/modal/calendar/calendar.component';
 
 // App services
 import { MessagesService } from './service/messages.service'
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     CalendarComponent,
     MainComponent,
     FooterComponent,
-    TermsOfServicesComponent
+    TermsOfServicesComponent,
+    CalendarModalComponent
   ],
   imports: [
     BrowserModule,
