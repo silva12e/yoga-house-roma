@@ -27,29 +27,20 @@ export class ContactUsFormComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // this.contactForm = this.formBuilder.group({
-    //     name: ['', Validators.required],
-    //     email: ['', Validators.required],
-    //     subject: [''],
-    //     message: ['', [Validators.required, Validators.minLength(10)]]
-    // });
-    var myLatLng = {};
+    const myLatLng = {};
 
-    var mapProp = {
+    const mapProp = {
       center: new google.maps.LatLng(41.914493, 12.464559),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    
+
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
- 
-    var marker = new google.maps.Marker({
+
+    const marker = new google.maps.Marker({
       position: {lat: 41.914493, lng: 12.464559},
       map: this.map,
       title: 'Via Giuseppe Ferrari, 12, 00195 Roma RM, Italy'
     });
-  }
-
-  submit($event) {
   }
 }

@@ -33,7 +33,7 @@
 }
 
 .action-button {
-  margin: 10px;
+  margin: 5px;
 }
 
 .action-button:hover {
@@ -53,6 +53,11 @@
   .down-arrow-icon {
     font-size: 12vw;
   }
+
+  
+  .action-wrapper {
+    margin-top: 60px !important;
+  }
 }
 
 /* iPhone devices */
@@ -67,6 +72,11 @@
   
     .down-arrow-icon {
       font-size: 12vw;
+    }
+
+    
+    .action-wrapper {
+      margin-top: 60px !important;
     }
 }
 
@@ -84,6 +94,10 @@
     .down-arrow-icon {
       font-size: 12vw;
     }
+
+    .action-wrapper {
+      margin-top: 60px !important;
+    }
 }
 
 /* ----------- iPhone X ----------- */
@@ -99,6 +113,10 @@
   
     .down-arrow-icon {
       font-size: 12vw;
+    }
+
+    .action-wrapper {
+      margin-top: 60px !important;
     }
 }
 
@@ -117,6 +135,10 @@
     .down-arrow-icon {
       font-size: 12vw;
     }
+    
+    .action-wrapper {
+      margin-top: 60px !important;
+    }
 }
 
 
@@ -133,6 +155,10 @@
   
     .down-arrow-icon {
       font-size: 12vw;
+    }
+
+    .action-wrapper {
+      margin-top: 60px !important;
     }
 }
 
@@ -151,6 +177,10 @@
     .down-arrow-icon {
       font-size: 12vw;
     }
+
+    .action-wrapper {
+      margin-top: 60px !important;
+    }
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
@@ -166,5 +196,9 @@
   
     .down-arrow-icon {
       font-size: 12vw;
+    }
+
+    .action-wrapper {
+      margin-top: 60px !important;
     }
 }
