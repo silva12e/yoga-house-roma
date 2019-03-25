@@ -20,7 +20,6 @@ export class AppLandingHerroComponent {
   }
 
   goToMindBodyCalendar(): void {
-    // Hack to get navigation to work without failures
-    window.open('https://yoga-house-roma-test.herokuapp.com/mind-body-calendar');
+    window.location.href = 'https://yoga-house-roma-test.herokuapp.com/mind-body-calendar';
   }
 }
