@@ -1,47 +1,46 @@
 .calendar-herro-main {
-    .calendar-title {
-        margin-top: 20px;
-        color: #a96d4b;
-        font-family: 'Cormorant Garamond', serif;
-    }
-    
-    .calendar-body {
-        margin-top: 40px;
-    }
+  .calendar-title {
+      margin-top: 20px;
+      color: #a96d4b;
+      font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .calendar-body {
+      margin-top: 40px;
+  }
 }
 
 .app-footer {
-    background-color: #a96d4b;
+  background-color: #a96d4b;
 }
 
 .landing-herro-main {
-    // background: url('https://res.cloudinary.com/eesportfolio/image/upload/v1547926636/48396281_356141178301813_5276518901121810432_n_1.jpg');
-    width:  100%; /*or 70%, or what you want*/
-    height: 100%; /*or 70%, or what you want*/
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color:#a96d4b;
+  width:  100%; /*or 70%, or what you want*/
+  height: 100%; /*or 70%, or what you want*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:#a96d4b;
 }
 
 .logo-img {
-    display: block;
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vh;
-    width: 30vw;
+  display: block;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  width: 30vw;
 }
 
 .down-arrow-icon	{
-    font-size: 6vw;
-    color: #FFF;
-    -webkit-transition: color 0.5s; /* Safari */
-    transition: color 0.5s;
+  font-size: 6vw;
+  color: #FFF;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .down-arrow-icon:hover {
-    color: #d65050;
+  color: #d65050;
 }
 
 .is-horizontal-center {
@@ -51,17 +50,25 @@
 /* Responsive media queries */
 
 /* Samsung galaxy 5 */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media screen 
+  and (device-width: 360px)
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
     .logo-img {
       width: 45vh
     }
-  
+
     .down-arrow-icon {
       font-size: 12vw;
     }
 
     .title {
       margin-left: 20px;
+    }
+
+    .class-schedule-img {
+      width: 200px;
+      height: 200px;
     }
   }
   
@@ -81,6 +88,11 @@
 
       .title {
         margin-left: 20px;
+      }
+      
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
       }
   }
   
@@ -102,6 +114,33 @@
       .title {
         margin-left: 20px;
       }
+      
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
+      }
+  }
+
+  @media screen
+   and (device-aspect-ratio: 40/71) {
+    .logo-img {
+      width: 45vh;
+      margin-top: 120px;
+    }
+  
+    .down-arrow-icon {
+      font-size: 12vw;
+    }
+
+    .title {
+      margin-left: 20px;
+      font-size: 40px !important;
+    }
+    
+    .class-schedule-img {
+      width: 200px;
+      height: 200px;
+    }
   }
   
   /* ----------- iPhone X ----------- */
@@ -121,6 +160,11 @@
 
       .title {
         margin-left: 20px;
+      }
+      
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
       }
   }
   
@@ -143,6 +187,12 @@
       .title {
         margin-left: 20px;
       }
+
+      
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
+      }
   }
   
   
@@ -164,6 +214,11 @@
       .title {
         margin-left: 20px;
       }
+
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
+      }
   }
   
   
@@ -184,6 +239,11 @@
 
       .title {
         margin-left: 20px;
+      }
+      
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
       }
   }
   
@@ -207,4 +267,8 @@
       }
 
       
+      .class-schedule-img {
+        width: 200px;
+        height: 200px;
+      }    
   }

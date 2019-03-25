@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,MAAM,EAAE,CAAC;CAKZ;;AAND,AAGI,kBAHc,CAGd,cAAc,CAAC;EACX,KAAK,EAAE,YAAY;CACtB",
+    "sources": [
+        "prices.modal.component.scss"
+    ],
+    "names": [],
+    "file": "prices.modal.component.css"
+}

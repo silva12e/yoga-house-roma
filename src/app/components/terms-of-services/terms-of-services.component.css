@@ -1,12 +1,10 @@
 .tos-hero-body {
   align-items: baseline !important;
   flex-direction: column;
-  margin: 40px;
 }
 
 .tos-herro {
   padding: 40px;
-  margin-bottom: 40px;
 }
 
 .tos-title {
@@ -20,4 +18,125 @@
   color: #a96d4b;
   font-family: 'Cormorant Garamond', serif;
 }
+
+@media screen and (device-aspect-ratio: 40/71) {
+  .tos-title {
+    margin-left: 20px;
+    font-size: 50px !important;
+  }
+}
+
+
+/* Responsive media queries */
+
+/* Samsung galaxy 5 */
+@media screen 
+  and (device-width: 360px)
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .tos-title {
+      margin-left: 20px;
+      font-size: 50px !important;
+    }
+  }
   
+  /* iPhone devices */
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }
+  }
+  
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      .tos-title {
+        margin-left: 20px;
+        font-size: 40px !important;
+      }
+  }
+
+  @media screen
+   and (device-aspect-ratio: 40/71) {
+    .tos-title {
+      margin-left: 20px;
+      font-size: 50px !important;
+    }
+  }
+  
+  /* ----------- iPhone X ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }
+  }
+  
+  /* Ipad tablets */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }
+  }
+  
+  
+  /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }
+  }
+  
+  
+  /* ----------- iPad Pro 10.5" ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 834px) 
+    and (max-device-width: 1112px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }
+  }
+  
+  /* ----------- iPad Pro 12.9" ----------- */
+  
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 1024px) 
+    and (max-device-width: 1366px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .tos-title {
+        margin-left: 20px;
+        font-size: 50px !important;
+      }  
+  }

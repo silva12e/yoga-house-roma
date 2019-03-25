@@ -1,0 +1,166 @@
+.calendar-herro-main .calendar-title {
+  margin-top: 20px;
+  color: #a96d4b;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.calendar-herro-main .calendar-body {
+  margin: 80px;
+
+}
+
+.app-footer {
+  background-color: #a96d4b;
+}
+
+.landing-herro-main {
+  width: 100%;
+  /*or 70%, or what you want*/
+  height: 100%;
+  /*or 70%, or what you want*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #a96d4b;
+}
+
+.logo-img {
+  display: block;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  width: 30vw;
+}
+
+.down-arrow-icon {
+  font-size: 6vw;
+  color: #FFF;
+  -webkit-transition: color 0.5s;
+  /* Safari */
+  transition: color 0.5s;
+}
+
+.down-arrow-icon:hover {
+  color: #d65050;
+}
+
+.is-horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Responsive media queries */
+/* Samsung galaxy 5 */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* iPhone devices */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* Ipad tablets */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo-img {
+    width: 45vh;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+  .title {
+    margin-left: 20px;
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo-img {
+    width: 45vh;
+  }
+  .title {
+    margin-left: 20px;
+  }
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+}
+/*# sourceMappingURL=app-calendar.component.css.map */
