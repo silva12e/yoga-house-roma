@@ -2,10 +2,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // App components
@@ -26,13 +24,12 @@ import { MainComponent } from './components/app-main/app-main.component';
 import { FooterComponent } from './components/app-footer/app-footer.component';
 import { CalendarModalComponent } from './components/modal/calendar/calendar.component';
 import { ClassScheduleComponent } from './components/class-schedule/class-schedule.component';
-
-// App services
-import { MessagesService } from './service/messages.service'
-import { ModalService } from './service/modal/modal.service';
 import { TermsOfServicesComponent } from './components/terms-of-services/terms-of-services.component';
 
-// Add to its own file
+// App services
+import { MessagesService } from './service/messages.service';
+import { ModalService } from './service/modal/modal.service';
+
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'mind-body-calendar', component: CalendarComponent }
@@ -60,8 +57,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(
