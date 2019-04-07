@@ -1,11 +1,11 @@
 <div
-  class="modal animated fadeIn price" 
+  class="price-modal modal animated fadeIn price" 
   [ngClass]="{'is-active': isActive}">
-  <div class="modal-background"></div>
-  <div class="card">
-    <!-- <img 
+  <div class="modal-background" (click)="closeModal()"></div>
+  <div class="card prices-modal-card">
+    <img 
       src="https://res.cloudinary.com/eesportfolio/image/upload/v1551646252/Yoga_House_Prices_Updated_25_feb.png" 
-      alt=""> -->
+      alt="">
   </div>
   <button
     class="modal-close is-large" 
