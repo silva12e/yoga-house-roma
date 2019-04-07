@@ -13,6 +13,22 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
+  
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+  .logo-img {
+    width: 45vh;
+  }
+
+  .title {
+    margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 10vh;
+  }
+}
 
   /* Responsive media queries */
 /* Samsung galaxy 5 */
@@ -104,10 +120,6 @@
 
   .title {
     margin-left: 20px;
-  }
-
-  .class-schedule-img {
-    height: 20vh;
   }
 }
 
