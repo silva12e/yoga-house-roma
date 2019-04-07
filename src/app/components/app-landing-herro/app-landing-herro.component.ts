@@ -1,8 +1,6 @@
 import {
   Component,
-  OnInit,
-  ElementRef,
-  HostListener
+  OnInit
 } from '@angular/core';
 import {
   trigger,
@@ -51,6 +49,7 @@ export class AppLandingHerroComponent implements OnInit {
   }
 
   goToMindBodyCalendar(): void {
-    window.location.href = 'https://yoga-house-roma-test.herokuapp.com/mind-body-calendar';
+    // window.location.href = 'https://yoga-house-roma-test.herokuapp.com/mind-body-calendar';
+    window.open('https://yoga-house-roma-test.herokuapp.com/mind-body-calendar', '_blank');
   }
 }
