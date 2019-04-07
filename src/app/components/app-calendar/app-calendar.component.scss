@@ -55,7 +55,8 @@
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
     .logo-img {
-      width: 45vh
+      width: 50vh;
+      margin-top: 17vh;
     }
 
     .down-arrow-icon {
@@ -79,7 +80,8 @@
     and (max-device-width: 667px) 
     and (-webkit-min-device-pixel-ratio: 2) { 
       .logo-img {
-        width: 45vh
+        width: 50vh;
+        margin-top: 19vh;
       }
     
       .down-arrow-icon {
@@ -104,7 +106,8 @@
     and (max-device-width: 736px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
       .logo-img {
-        width: 45vh
+        width: 54vh;
+        margin-top: 17vh;
       }
     
       .down-arrow-icon {
@@ -121,10 +124,24 @@
       }
   }
 
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px)
+  and (-webkit-device-pixel-ratio : 3) {
+  .logo-img {
+    width: 40vh !important;
+    margin-top: 25vh;
+  }
+
+  .down-arrow-icon {
+    font-size: 12vw;
+  }
+}
+
   @media screen
    and (device-aspect-ratio: 40/71) {
     .logo-img {
-      width: 45vh;
+      width: 50vh;
       margin-top: 120px;
     }
   
@@ -204,7 +221,8 @@
     and (max-device-width: 1024px) 
     and (-webkit-min-device-pixel-ratio: 2) {
       .logo-img {
-        width: 45vh
+        width: 55vh;
+        margin-top: 20vh;
       }
     
       .down-arrow-icon {
@@ -230,7 +248,8 @@
     and (max-device-width: 1112px)
     and (-webkit-min-device-pixel-ratio: 2) {
       .logo-img {
-        width: 45vh
+        width: 55vh;
+        margin-top: 20vh;
       }
     
       .down-arrow-icon {
@@ -255,7 +274,8 @@
     and (max-device-width: 1366px)
     and (-webkit-min-device-pixel-ratio: 2) {
       .logo-img {
-        width: 45vh
+        width: 55vh;
+        margin-top: 20vh;
       }
 
       .title {

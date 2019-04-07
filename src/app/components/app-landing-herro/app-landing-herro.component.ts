@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-landing-herro',
   templateUrl: './app-landing-herro.component.html',
-  styleUrls: ['./app-landing-herro.component.css']
+  styleUrls: ['./app-landing-herro.component.scss']
 })
 export class AppLandingHerroComponent {
   isPricesModalActive = false;

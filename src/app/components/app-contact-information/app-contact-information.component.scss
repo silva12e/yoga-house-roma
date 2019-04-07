@@ -1,6 +1,8 @@
+@import '~styles.scss';
+
 .contact-information-title {
     margin-top: 20px;
-    color: #a96d4b;
+    color: $primaryBackground;
     font-family: 'Cormorant Garamond', serif;
 }
 

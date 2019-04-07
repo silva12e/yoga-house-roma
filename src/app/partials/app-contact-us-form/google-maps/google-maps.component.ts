@@ -1,34 +1,18 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 
 import { } from '@types/googlemaps';
 
 @Component({
-  selector: 'app-contact-us-form',
-  templateUrl: './contact-us-form.component.html',
-  styleUrls: ['./contact-us-form.component.css']
+  selector: 'app-google-maps',
+  templateUrl: './google-maps.component.html',
+  styleUrls: ['./google-maps.component.css']
 })
-export class ContactUsFormComponent implements OnInit {
-  contactForm: FormGroup;
-  submitted = false;
+export class GoogleMapsComponent implements OnInit {
 
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-
-  get f() { 
-    return this.contactForm.controls; 
-  }
-
-  constructor(
-    private http: HttpClient,
-    private formBuilder: FormBuilder,
-  ) { }
-
   ngOnInit() {
-    const myLatLng = {};
-
     const mapProp = {
       center: new google.maps.LatLng(41.914493, 12.464559),
       zoom: 15,

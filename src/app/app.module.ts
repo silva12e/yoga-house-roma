@@ -16,7 +16,7 @@ import {
    AppInformationListItemComponent 
   } from './components/app-information-list/app-information-list-item/app-information-list-item.component';
 import { NavbarComponent } from './components/app-navbar/navbar/navbar.component';
-import { ContactUsFormComponent } from './partials/app-contact-us-form/contact-us-form/contact-us-form.component';
+import { GoogleMapsComponent } from './partials/app-contact-us-form/google-maps/google-maps.component';
 import { ContactInformationComponent } from './partials/app-contact-information/contact-information/contact-information.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { PricesModalComponent } from './components/modal/prices/prices.modal.component';
@@ -44,7 +44,7 @@ const appRoutes: Routes = [
     AppInformationListComponent,
     AppInformationListItemComponent,
     NavbarComponent,
-    ContactUsFormComponent,
+    GoogleMapsComponent,
     ContactInformationComponent,
     ModalComponent,
     PricesModalComponent,
