@@ -2,10 +2,10 @@
 <app-calendar-modal [isActive]="isCalendarModalActive" (onClose)="toggleCalendarModal()"></app-calendar-modal>
 <section class="hero is-fullheight landing-herro-main">
   <div class="hero-title">
-    <div class="container">
+    <div class="container"  [@initHeader]="initialState">
       <img class="logo-img" src="https://res.cloudinary.com/eesportfolio/image/upload/v1547928677/TYHR_Full-Wordmark_White.png">
     </div>
-    <div class="action-wrapper">
+    <div class="action-wrapper" [@initHeader]="initialState">
       <a class="button is-primary is-inverted is-outlined action-button" (click)="toggleCalendarModal()">
         Calendar
       </a>
@@ -18,7 +18,7 @@
       </a>
     </div>
   </div>
-  <div class="hero-footer">
+  <div class="hero-footer"  [@initHeader]="initialState">
     <div class="container has-text-centered">
       <i class="material-icons down-arrow-icon">
         expand_more

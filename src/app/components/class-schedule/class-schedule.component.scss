@@ -1,50 +1,32 @@
-.app-footer {
-  background-color: #a96d4b;
-}
+.calendar-herro-main .calendar-title {
+    margin-top: 20px;
+    color: #a96d4b;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .calendar-herro-main .calendar-body {
+    margin: 80px;
+  }
 
-.landing-herro-main {
-  width: 100%;
-  /*or 70%, or what you want*/
-  height: 100%;
-  /*or 70%, or what you want*/
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #a96d4b;
-}
+  .is-horizontal-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 
-.logo-img {
-  display: block;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15vh;
-  width: 30vw;
-}
-
-.down-arrow-icon {
-  font-size: 6vw;
-  color: #FFF;
-  -webkit-transition: color 0.5s;
-  /* Safari */
-  transition: color 0.5s;
-}
-
-.down-arrow-icon:hover {
-  color: #d65050;
-}
-
-/* Responsive media queries */
+  /* Responsive media queries */
 /* Samsung galaxy 5 */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -54,11 +36,13 @@
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -68,11 +52,13 @@
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -82,11 +68,13 @@
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -97,11 +85,13 @@
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -111,11 +101,13 @@
   .logo-img {
     width: 45vh;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
+
   .title {
     margin-left: 20px;
+  }
+
+  .class-schedule-img {
+    height: 20vh;
   }
 }
 
@@ -124,9 +116,6 @@
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo-img {
     width: 45vh;
-  }
-  .down-arrow-icon {
-    font-size: 12vw;
   }
   .title {
     margin-left: 20px;
@@ -142,8 +131,4 @@
   .title {
     margin-left: 20px;
   }
-  .down-arrow-icon {
-    font-size: 12vw;
-  }
 }
-/*# sourceMappingURL=app-calendar.component.css.map */

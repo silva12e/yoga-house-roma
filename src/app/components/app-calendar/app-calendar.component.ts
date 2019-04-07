@@ -1,13 +1,15 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ElementRef,
+  HostListener
 } from '@angular/core';
 import {
   trigger,
   state,
   style,
   animate,
-  transition,
+  transition
 } from '@angular/animations';
 
 @Component({
@@ -15,23 +17,53 @@ import {
   templateUrl: './app-calendar.component.html',
   styleUrls: ['./app-calendar.component.scss'],
   animations: [
-    state( 'invisible', style({
-      opacity: 0
-    })),
-    state( 'visible', style({
-      opacity: 1
-    })),
-    transition('invisible => visible', [
-      animate('1s')
+    trigger('scrollAnimation', [
+      state('show', style({
+        opacity: 1,
+        transform: 'translateX(0)'
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: 'translateX(-100%)'
+      })),
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
     ]),
-  ],
+    trigger('initHeader', [
+      state('show', style({
+        opacity: 1
+      })),
+      state('hide', style({
+        opacity: 0
+      })),
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
+    ])
+  ]
 })
 export class CalendarComponent implements OnInit {
-  constructor() { }
+  initState = 'hide';
+  state = 'hide';
 
-  ngOnInit() {}
+  constructor(
+    public el: ElementRef
+  ) { }
 
-  downloadClassSchedule(): void {
-    window.open('https://res.cloudinary.com/eesportfolio/image/upload/v1551646370/Schedule_PDF_updated_25_feb.pdf');
+  ngOnInit() {
+    setTimeout(() => {
+      this.initState = 'show';
+    }, 500);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const componentPosition = this.el.nativeElement.offsetTop;
+    const scrollPosition = window.pageYOffset;
+
+    if (scrollPosition >= componentPosition) {
+      this.state = 'show';
+    } else {
+      this.state = 'hide';
+    }
   }
 }

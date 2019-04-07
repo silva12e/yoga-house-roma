@@ -8,9 +8,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-terms-of-services',
-  templateUrl: './terms-of-services.component.html',
-  styleUrls: ['./terms-of-services.component.css'],
+  selector: 'app-class-schedule',
+  templateUrl: './class-schedule.component.html',
+  styleUrls: ['./class-schedule.component.scss'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
@@ -26,21 +26,25 @@ import {
     ])
   ]
 })
-export class TermsOfServicesComponent {
-  tosState = 'hide';
-  @ViewChild('tosRef') tosRef: ElementRef;
+export class ClassScheduleComponent {
+  scheduleState = 'hide';
+  @ViewChild('scheduleRef') scheduleRef: ElementRef;
 
-  constructor(
+   constructor(
     public el: ElementRef
   ) {}
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    const contentHeight = this.tosRef.nativeElement.offsetTop - 1000;
+    const contentHeight = this.scheduleRef.nativeElement.offsetTop - 1000;
     const scrollPosition = window.pageYOffset;
 
     if (scrollPosition >= contentHeight) {
-      this.tosState = 'show';
+      this.scheduleState = 'show';
     }
+  }
+
+  downloadClassSchedule(): void {
+    window.open('https://res.cloudinary.com/eesportfolio/image/upload/v1551646370/Schedule_PDF_updated_25_feb.pdf');
   }
 }

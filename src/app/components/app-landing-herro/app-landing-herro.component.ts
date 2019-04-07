@@ -1,13 +1,44 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ElementRef,
+  HostListener
+} from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-landing-herro',
   templateUrl: './app-landing-herro.component.html',
-  styleUrls: ['./app-landing-herro.component.scss']
+  styleUrls: ['./app-landing-herro.component.scss'],
+  animations: [
+    trigger('initHeader', [
+      state('show', style({
+        opacity: 1
+      })),
+      state('hide', style({
+        opacity: 0
+      })),
+      transition('show => hide', animate('700ms ease-out')),
+      transition('hide => show', animate('700ms ease-in'))
+    ])
+  ]
 })
-export class AppLandingHerroComponent {
+export class AppLandingHerroComponent implements OnInit {
   isPricesModalActive = false;
   isCalendarModalActive = false;
+  initialState = 'hide';
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.initialState = 'show';
+    }, 500);
+  }
 
   constructor() { }
 

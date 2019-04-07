@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // App components
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { CalendarComponent } from './components/app-calendar/app-calendar.compon
 import { MainComponent } from './components/app-main/app-main.component';
 import { FooterComponent } from './components/app-footer/app-footer.component';
 import { CalendarModalComponent } from './components/modal/calendar/calendar.component';
+import { ClassScheduleComponent } from './components/class-schedule/class-schedule.component';
 
 // App services
 import { MessagesService } from './service/messages.service'
@@ -52,7 +54,8 @@ const appRoutes: Routes = [
     MainComponent,
     FooterComponent,
     TermsOfServicesComponent,
-    CalendarModalComponent
+    CalendarModalComponent,
+    ClassScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ const appRoutes: Routes = [
     HttpModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes
     )

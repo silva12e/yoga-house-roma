@@ -1,12 +1,12 @@
 <section class="hero is-fullheight landing-herro-main">
-  <div class="hero-title">
+  <div class="hero-title" [@initHeader]='initState'>
 		<div class="container logo-container">
 			<img
 				class="logo-img"
 				src="https://res.cloudinary.com/eesportfolio/image/upload/v1547928322/TYHR_Wordmark-CircleFill_White.png">
 		</div>
   </div>
-  <div class="hero-footer">
+  <div class="hero-footer" [@initHeader]='initState'>
 		<div class="container has-text-centered">
 			<i class="material-icons down-arrow-icon">
 					expand_more
@@ -17,12 +17,12 @@
 <section class="hero is-fullheight calendar-herro-main">
     <div class="hero-title">
 			<div class="container">
-				<h1 class="title is-1 calendar-title calendar-component-title">
+				<h1 class="title is-1 calendar-title calendar-component-title"  [@scrollAnimation]="state">
 						Class Calendar
 				</h1>
 			</div>
     </div>
-    <div class="hero-body calendar-body">
+    <div class="hero-body calendar-body"  [@scrollAnimation]="state">
 			<div class="container">
 				<healcode-widget 
 					data-type="schedules"
@@ -34,27 +34,7 @@
     </div>
 </section>
 
-<section class="hero calendar-herro-main">
-    <div class="hero-title">
-			<div class="container">
-				<h1 class="title is-1 calendar-title">
-						Class Schedule
-				</h1>
-			</div>
-    </div>
-    <div class="hero-body calendar-body">
-			<div class='column'>
-				<div class='card equal-height'>
-					<div class='card-content is-flex is-horizontal-center'>
-						<img 
-							class="class-schedule-img" 
-							(click)="downloadClassSchedule()" 
-							src="https://res.cloudinary.com/eesportfolio/image/upload/v1551646356/Schedule_PNG_Updated_25_feb.png" alt="">
-					</div>
-				</div>
-			</div>
-    </div>
-</section>
+<app-class-schedule></app-class-schedule>
 
 <app-terms-of-services></app-terms-of-services>
 
