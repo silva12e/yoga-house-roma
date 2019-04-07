@@ -76,5 +76,5 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
-require('web-animations-js/web-animations.min');
+import 'web-animations-js/web-animations.min';
 
