@@ -49,7 +49,6 @@ export class AppLandingHerroComponent implements OnInit {
   }
 
   goToMindBodyCalendar(): void {
-    // window.location.href = 'https://yoga-house-roma-test.herokuapp.com/mind-body-calendar';
-    window.open('https://yoga-house-roma-test.herokuapp.com/mind-body-calendar', '_blank');
+    window.open('http://www.theyogahouseroma.com//mind-body-calendar', '_blank');
   }
 }
